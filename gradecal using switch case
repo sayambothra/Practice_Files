@@ -1,0 +1,44 @@
+package grade.calculation;
+import java.util.Scanner;
+
+public class GradeCalculation {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       System.out.println("please enter your grade in captial letters to know ur percentage");
+        Scanner s=new Scanner(System.in);
+        char grade=s.next().charAt(0);
+        
+         
+         switch(grade){
+                 case 'O':
+                 System.out.println("you  have scored 95-100 percent");
+                 break;
+                 case 'A':
+                 System.out.println("you  have scored 90-95 percent");
+                 break;
+                 case 'B':
+                 System.out.println("you  have scored 80-90 percent");
+                 break;
+                 case 'C':
+                 System.out.println("you  have scored 70-80 percent");
+                 break;
+                 case 'D':
+                 System.out.println("you  have scored 60-70 percent");
+                 break;
+                 case 'E':
+                 System.out.println("you  have  just passes the examination");
+                 break;
+                 case 'F':
+                 System.out.println("you  have FAILED");
+                 break;
+                 default:
+                 System.out.println("enter a valid option");
+                 break;
+         }
+         
+     }
+     
+}
