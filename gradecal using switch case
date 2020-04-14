@@ -3,9 +3,6 @@ import java.util.Scanner;
 
 public class GradeCalculation {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
        System.out.println("please enter your grade in captial letters to know ur percentage");
         Scanner s=new Scanner(System.in);
