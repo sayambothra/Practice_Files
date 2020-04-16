@@ -1,0 +1,39 @@
+
+package printinfo;
+
+
+public class Printinfo {
+public class EMployee {
+   
+       String name;
+        int year;
+        String address;
+         
+        public void setdata(String name1,int y,String a){
+            name=name1;
+            year=y;
+            address=a;
+        }
+        public void getdata(){
+            System.out.println("NAME\t      Year of joining\tAddress");
+        }
+    
+}
+    
+
+    
+    public static void main(String[] args) {
+        EMployee E1=new EMployee();
+        EMployee E2=new EMployee();
+        EMployee E3=new EMployee();
+        E1.setdata("Robert\nWallStreet",1994,"64C-");
+        E1.getdata();
+        E2.setdata("Sam\nWallStreet",2000,"68D-");
+        E3.setdata("John\nWallStreet",1999,"26B-");             
+        
+        System.out.println(E1.name+   "\t     "  +E1.year+"\t  "  +E1.address);
+        System.out.println(E2.name+   "\t     "  +E2.year+"\t  "  +E2.address);
+        System.out.println(E3.name+   "\t     "  +E3.year+"\t  "  +E3.address);
+    }
+    
+}
