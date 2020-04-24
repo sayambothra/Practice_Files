@@ -9,14 +9,14 @@ public class FibonacciSeries {
         Scanner sc =new Scanner(System.in);
         System.out.println("Enter number of terms");
         int num=sc.nextInt();
-        int a=0;
-        int b=1;
-        System.out.print(a+" "+b+" ");
+        int first = 0;
+        int second = 1;
+        System.out.print(first+" "+second+" ");
         for(int i=2;i<num;i++){
-            int c=a+b;
-            System.out.print(c+" ");
-            a=b;
-            b=c;
+            int next= first + second;
+            System.out.print(next+" ");
+            first = second;
+            second = next;
             
         }
         
